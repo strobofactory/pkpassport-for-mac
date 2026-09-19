@@ -8,6 +8,7 @@ Static HTML / CSS / JavaScript landing page for PKPassport for Mac.
 - Responsive CSS and `prefers-reduced-motion` support included
 - SEO meta, canonical, Open Graph/Twitter metadata, SoftwareApplication JSON-LD, favicon, robots.txt and sitemap.xml included
 - Purchase CTA points to the existing STROBOFACTORY product page
+- GitHub → Vercel production deployment connected and verified on 2026-09-19
 
 ## Deployment target
 - GitHub repository: `strobofactory/pkpassport-for-mac`
