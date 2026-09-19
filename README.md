@@ -22,17 +22,18 @@ Static HTML / CSS / JavaScript landing page for PKPassport for Mac.
 ## Product page
 https://strobofactory.net/products/pkpassport-for-mac
 
-## Current screenshot sources
-The first implementation uses the existing STROBOFACTORY Shopify CDN screenshots so the LP can be reviewed before final asset packaging:
+## Asset layout
 
-- `PKcapture_01.png` — Drop
-- `PKcapture_02.png` — Create
-- `PKcapture_03.png` — Destination / settings
-- `PKcapture_04.png` — Windows Preview
+- `assets/brand/` — production app icons
+- `assets/hero/` — production hero / flow visual
+- `assets/screens/` — optimized WebP product captures used by the LP
+- `assets/original/` — source images retained for future export work
 
-Before final production lock, copy these screenshots into `assets/screens/`, optimize them for web, and change the HTML references to local paths. This avoids coupling the standalone LP to Shopify CDN asset URLs.
+All images rendered by `index.html` are local files. The four product captures no longer depend on the Shopify CDN, and the previously embedded Base64 images have been extracted to `assets/`.
+
+See `docs/LP_SPEC.md` for the section and interaction contract, and `docs/DEPLOYMENT.md` for the publishing flow.
 
 ## Publishing flow
-`main` push → Vercel production deployment → `pkpassport.strobofactory.net`
+`main` push → Vercel production deployment → `https://pkpassport-for-mac.vercel.app/`
 
 The existing `pkpassport-license` repository / Vercel project is a separate license service and must not be modified for this LP.
