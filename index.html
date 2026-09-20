@@ -48,15 +48,14 @@
 @media(max-width:820px){.scroll-story-shell{padding-top:68px;padding-bottom:68px}.scroll-story-visual{padding:18px 0 32px}.story-intro{padding-top:32px;padding-bottom:40px}.story-chapter{min-height:auto;padding:44px 0}}
 
 /* Mobile horizontal overflow containment */
-html,body{width:100%;max-width:100%;overflow-x:hidden}
-body{position:relative}
-main,.site-header,.hero,.why,.features,.scroll-story,.pk-story,#faq,.final-cta,.footer{max-width:100%;overflow-x:clip}
+html,body{width:100%;max-width:100%}
+html{overflow-x:hidden}
+body{position:relative;overflow-x:hidden}
+main,.site-header,.hero,.why,.features,.pk-story,#faq,.final-cta,.footer{max-width:100%}
 .shell,.header-inner,.hero-poster,.hero-copy,.purchase-cta,.why-grid,.compare-panel,.section-heading,.scroll-story-shell,.scroll-story-visual,.story-screen-wrap,.pk-story-grid,.pk-portrait,.faq-shell,.purchase-panel,.footer-inner{min-width:0;max-width:100%}
 img,svg,video,canvas{max-width:100%}
 .feature-rail{max-width:100%;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 @media(max-width:820px){
-  .scroll-story{overflow-x:hidden}
-  .scroll-story-visual{overflow:hidden}
   .story-halo{pointer-events:none}
   .story-halo--one{width:min(520px,135vw);height:min(520px,135vw)}
   .story-halo--two{width:min(760px,190vw);height:min(760px,190vw)}
